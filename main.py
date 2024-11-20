@@ -17,10 +17,9 @@ def read_file_to_list(filename):
         print("Error Reading File")
         return []
 
-print(read_file_to_list("2014.txt"))
 
 
-file_name = input("W")
-word_choice = input("re")
+file_name = input("What's the file you're looking for? ")
+word_choice = input("What word do you want to search for? ")
 Variable = read_file_to_list(file_name)
 print(find_word(Variable, word_choice))
